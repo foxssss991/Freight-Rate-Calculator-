@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+    background:#eef3f8;
+    color:#333;
+    padding:30px;
+}
+
+.container{
+    max-width:1100px;
+    margin:0 auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#1f2937;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:25px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:6px;
+    font-weight:600;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #d6d6d6;
+    border-radius:10px;
+    font-size:15px;
+    transition:.2s;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+}
+
+button{
+    width:100%;
+    padding:16px;
+    margin-top:25px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.25s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.results{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-top:25px;
+}
+
+.results h2{
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#2563eb;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #ececec;
+}
+
+tr:hover{
+    background:#f8fafc;
+}
+
+.history{
+    margin-top:35px;
+}
+
+.delete{
+    background:#dc2626;
+    color:white;
+    border:none;
+    border-radius:8px;
+    padding:8px 12px;
+    cursor:pointer;
+    width:auto;
+    margin:0;
+}
+
+.delete:hover{
+    background:#b91c1c;
+}
+
+.status-good{
+    color:#16a34a;
+    font-weight:bold;
+}
+
+.status-average{
+    color:#ca8a04;
+    font-weight:bold;
+}
+
+.status-low{
+    color:#dc2626;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    body{
+        padding:15px;
+    }
+
+    .card,
+    .results{
+        padding:18px;
+    }
+
+}
